@@ -19,39 +19,39 @@ Dockerイメージとは
   - AUFSなどの特殊なファイルシステムでで使用されている。
   - イメージ上のデータはレイヤで構成され読み取り専用
 
-3. Whalesay
+3. Whalesay  
 次のコマンドを使うとクジラがセリフを言う画像がみれる。
 ```
 docker run docker/whalesay cowsay Hello!!
 ```
 
-4. Images
-  　ローカル上にあるイメージ一覧を表示するコマンド
+4. Images  
+ローカル上にあるイメージ一覧を表示するコマンド
   imageとはイメージ一覧を表示するサブコマンドである。
 
   ```
   docker images
   ```
 
-5. Tag  
-タグ付けとは、既存のイメージに別名をつけることである。
-docker タグ付けするサブコマンド　既存のイメージ名　新規のイメージ名:新規のタグ名
-```
-docker tag docker/whalesay my_whalesay:ver1
-```
+5. Tag,remove  
+  - タグ付けとは、既存のイメージに別名をつけることである。  
+  docker タグ付けするサブコマンド　既存のイメージ名　新規のイメージ名:新規のタグ名  
+  ```
+  docker tag docker/whalesay my_whalesay:ver1
+  ```  
 
-次のコマンドでイメージの詳細情報を表示する
-docker イメージの詳細情報を表示するサブコマンド　対象のイメージ名orイメージID
-```
-docker inspect my_whalesay
-```
+  - 次のコマンドでイメージの詳細情報を表示する  
+    docker イメージの詳細情報を表示するサブコマンド　対象のイメージ名orイメージID
+    ```
+    docker inspect my_whalesay
+    ```
 
-次のコマンドでイメージを削除する
-docker rmi 対象のイメージ名orイメージID
-```
-docker rmi docker/whalesay
-```
-強制削除の時は-fをつける
-```
-docker rmi -f docker/whalesay
-```
+  - 次のコマンドでイメージを削除する  
+    docker rmi 対象のイメージ名orイメージID
+    ```
+    docker rmi docker/whalesay
+    ```
+    強制削除の時は-fをつける
+    ```
+    docker rmi -f docker/whalesay
+    ```
