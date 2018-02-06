@@ -1,6 +1,7 @@
-1. Hello world  
-次の順にコマンドを入力
-dockerコマンド　サブコマンド　イメージの指定
+1. Hello world
+
+  次の順にコマンドを入力  
+  dockerコマンド　サブコマンド　イメージの指定
 
   下のコマンドはhello-worldというイメージを指定して起動(run)する
   ```
@@ -11,7 +12,7 @@ dockerコマンド　サブコマンド　イメージの指定
   - dicker create:コンテナの作成
   - docker start:コンテナの起動
 
-2. Docker image
+2. Docker image  
 Dockerイメージとは
   - コンテナ実行に必要なファイルをまとめたファイルシステム(OSのライブラリ、webサーバーなど)
   - AUFSなどの特殊なファイルシステムでで使用されている。
