@@ -1,16 +1,15 @@
-1. Hello world
+1. Hello world  
+    次の順にコマンドを入力  
+    dockerコマンド　サブコマンド　イメージの指定
 
-  次の順にコマンドを入力  
-  dockerコマンド　サブコマンド　イメージの指定
-
-  下のコマンドはhello-worldというイメージを指定して起動(run)する
-  ```
-  docker run hello-world
-  ```
-  runのコマンドは以下の3つのコマンドを同時に実行している。
-  - docker pull:イメージの取得
-  - dicker create:コンテナの作成
-  - docker start:コンテナの起動
+    下のコマンドはhello-worldというイメージを指定して起動(run)する
+    ```
+    docker run hello-world
+    ```
+    runのコマンドは以下の3つのコマンドを同時に実行している。
+    - docker pull:イメージの取得
+    - dicker create:コンテナの作成
+    - docker start:コンテナの起動
 
 2. Docker image  
    Dockerイメージとは
