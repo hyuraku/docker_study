@@ -52,3 +52,8 @@ imageとはイメージ一覧を表示するサブコマンドである。
         ```
         docker rmi -f docker/whalesay
         ```
+6. build
+   dockerfileからイメージをビルドするコマンド
+   ```
+   docker build -t docker-whale .
+   ```
