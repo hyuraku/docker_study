@@ -60,3 +60,18 @@ docker hubにて作ったレポジトリに
   ```
     docker cp コンテナ名orID:コンテナ上のコピーしたいファイルのパス コピー先のパス
   ```
+
+    例
+    コピーの練習用のコマンドを起動
+    ```
+      docker run --name tmp-nginx --rm -d nginx
+    ```
+    次にコピーコマンドを実行
+    ```
+      docker cp tmp-nginx:/etc/nginx/conf/d/default.conf ./
+    ```
+    dockerファイルを書き換えた後はbuild
+
+    ```
+      docker build nginx:ver1 .
+    ```
