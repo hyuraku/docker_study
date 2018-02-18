@@ -31,9 +31,9 @@
     docker attach コンテナ名orコンテナID
   ```
   - docker execを使用する場合（こちらの方が安全）
-    exitで抜けてもコンテナは停止しない。ß
+    exitで抜けてもコンテナは停止しない。
   ```
-    docker exec it コンテナ名orコンテナID/bin/bash
+    docker exec -it コンテナ名orコンテナID /bin/bash
   ```
 
 - dockerコンテナの動作確認
@@ -41,4 +41,10 @@
     -a は詳細な情報を表示するためのオプション
   ```
     docker ps -a
+  ```
+
+- docker commit コマンド
+  新しくイメージ名やタグ名を保存する。
+　```
+    docker commit コンテナ名orコンテナID　イメージ名:タグ名
   ```
