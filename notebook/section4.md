@@ -10,6 +10,7 @@
     docker-machine create --driver virtualbox default
   ```
   - 作成したdockerホストに接続する。
+    - -u(オプション):解除する際に使用する
   ```
     docker-machine env default
   ```
@@ -27,4 +28,9 @@
   - dockerホストを停止する
   ```
     docker-machine stop default
+  ```
+
+  - dockerホストを起動する
+  ```
+    docker-machine start default
   ```
