@@ -40,7 +40,7 @@ docker hubにて作ったレポジトリに
 
   コマンド例
   ```
-    docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+    docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d -p 8080:80 nginx
     #/some/content:コンテナにマウントするホスト側のディレクトリ
     #/usr/share/nginx/html:マウント先のコンテナのディレクトリ
     #ro:read only、読み取り専用のオプション
