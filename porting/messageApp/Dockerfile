@@ -1,6 +1,5 @@
 # Use node 4.4.5 LTS
-FROM node:4.4.5
-ENV LAST_UPDATED 20160605T165400
+FROM node:12
 
 # Copy source code
 COPY . /app
@@ -9,7 +8,7 @@ COPY . /app
 WORKDIR /app
 
 # Install dependencies
-RUN npm install
+RUN npm install && npm upgrage
 
 # Expose API port to the outside
 EXPOSE 80
