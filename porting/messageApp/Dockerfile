@@ -8,7 +8,7 @@ COPY . /app
 WORKDIR /app
 
 # Install dependencies
-RUN npm install && npm upgrage
+RUN npm install && npm update && npm audit fix
 
 # Expose API port to the outside
 EXPOSE 80
