@@ -1,7 +1,13 @@
-FROM alpine:latest
-RUN apt update && apt install git
+FROM golang:1.14.6-alpine3.12 as builder
+WORKDIR /golang/
+ADD . ./
+RUN go build -o main ./src/
 
-FROM golang:1.14.6-alpine3.12
-RUN mkdir /go/src/work
-WORKDIR /go/src/work
-ADD . /go/src/work
+FROM alpine:latest
+
+WORKDIR /app/
+COPY --from=builder /golang/main /app/
+
+RUN chmod +x main
+EXPOSE 2224
+CMD ["./main"]
