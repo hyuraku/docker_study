@@ -1,5 +1,3 @@
-
-
 FROM golang:1.14.6-alpine3.12 as builder
 WORKDIR /golang/
 ADD . ./
