@@ -9,5 +9,5 @@ WORKDIR /app/
 COPY --from=builder /golang/main /app/
 
 RUN chmod +x main
-EXPOSE 2224
+# EXPOSE 2224
 CMD ["./main"]

@@ -13,7 +13,7 @@ ssh -p 32769 localhost
 - docker
 ```
 docker build -t golang:0.2
-docker run -it -d -p 2224 --name test3 golang:0.2
+docker run -it --rm -p 2224 --name test3 golang:0.2
 
  docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                     NAMES
@@ -21,3 +21,6 @@ hogehoge        golang:0.2          "./main"                 About hogehoge minu
 
 ssh -p 32770 localhost
 ```
+
+To bypass this error, regnerate your host key with
+`ssh-keygen -R "[localhost]:2222"`
