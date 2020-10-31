@@ -1,6 +1,6 @@
 - docker-compose
 ```
-docker-compose build .
+docker-compose build app
 docker-compose run -p 2224 app ./main
 
 docker ps 
